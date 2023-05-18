@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+    <title>Welcome to Fredd Designs</title>
+
+    <!--Meta Tags-->
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--End of Meta tags-->
+
+
+
+    <!--Link Elements-->
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Fonts/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="Font/stylesheet.css" type="text/css" charset="utf-8"/>
+
+
+
+    <!--End of Link Elements-->
+  </head>
+
+
+  <body>
+
+
+
+      <div class="all-containers">
+          <img class="logo-icon" src="assets/logo.png">
+
+      
+        <h1>Create your Account</h1>
+
+
+    <div class="google-container">
+
+       <button class="sign-google"><img class="google-icon" src="assets/google-icon.png">Sign Up with Google</button>
+
+    </div>
+      <div class="gray-container">
+      <a class="another-sign-up">Or Sign Up Using Email</a>
+
+
+    <div class="form-container">
+     
+        <form>
+
+          <input type="email" placeholder="Email" class="email-input">
+          
+          <br>
+
+          <input type="password" placeholder="Password" class="password-input">
+
+        
+       </form>
+
+    </div>
+
+
+
+    <div class="texts-container">
+
+
+
+        <input type="checkbox" class="check-box" onchange="toggleButtonColor()"> 
+      
+      
+        <a>Agreed with our <span>Terms of Services</span> and <span>Privacy Policy</span></a>
+
+
+
+    </div>
+
+
+
+      <div class="last-container">
+
+
+      <button class="signup-button" id="signupButton">Sign Up</button>
+
+
+      </div>
+
+
+      </div>
+      
+      <div class="last-container">
+
+        <a class="last-text">Already a Member?</a>
+
+        <a class="log-in">Log In ></a>
+      </div>
+
+    </div>
+
+
+
+    <script async defer>
+      function toggleButtonColor() {
+      var checkbox = document.getElementById("checkbox");
+      var signupButton = document.getElementById("signupButton");
+
+      if (checkbox.checked) {
+        signupButton.classList.add("enabled");
+        signupButton.disabled = false;
+      } else {
+        signupButton.classList.remove("enabled");
+        signupButton.disabled = true;
+      }
+    }
+    </script>
+  </body>
+
+</html>
